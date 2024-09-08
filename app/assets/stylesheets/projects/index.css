@@ -9,7 +9,7 @@ a {
 /* 画面上部の「人生を変えるフリマアプリ」帯部分 */
 .title-contents {
   width: 100vw;
-  background-image: url('furima-header01.png');
+  background-image: url('task.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
@@ -226,14 +226,6 @@ a {
 .item-contents>.title {
   font-size: 5vh;
   line-height: 1.4;
-  font-weight: bold;
-}
-
-.item-contents>.subtitle {
-  font-size: 3vh;
-  margin: 1vh 0;
-  text-decoration: none;
-  color: #3ccace;
   font-weight: bold;
 }
 
