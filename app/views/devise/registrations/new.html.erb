@@ -42,21 +42,21 @@
       <label class="form-text">入社年</label>
       <span class="indispensable">必須</span>
     </div>
-    <%= f.password_field :entry, class:"input-default", id:"entry", placeholder:"入社年を入力して下さい 例)2024" %>
+    <%= f.text_area :entry, class:"input-default", id:"entry", placeholder:"入社年を入力して下さい 例)2024" %>
   </div> 
    <div class="form-group">
     <div class='form-text-wrap'>
       <label class="form-text">所属</label>
       <span class="indispensable">必須</span>
     </div>
-    <%= f.password_field :belong_to, class:"input-default", id:"belong_to", placeholder:"所属を選択して下さい" %>
+    <%= f.collection_select(:belong_to_id, BelongTo.all, :id, :name, {}, {class:"select-box", id:"item-prefecture"}) %>
   </div> 
    <div class="form-group">
     <div class='form-text-wrap'>
       <label class="form-text">上司（課長）</label>
       <span class="indispensable">必須</span>
     </div>
-    <%= f.password_field :supervisor, class:"input-default", id:"supervisor", placeholder:"上司氏名を入力して下さい" %>
+    <%= f.text_area :supervisor, class:"input-default", id:"supervisor", placeholder:"上司氏名を入力して下さい" %>
   </div> 
 
   <div class="form-group">
